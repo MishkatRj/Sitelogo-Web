@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .body {
+        background-image: url(white\ pistel\ bg.avif);
+        background-size: cover;
+      }
+
+      .navbar {
+        height: 60px;
+        display: flex;
+      }
+
+      .nav-logo {
+        padding-top: 30px;
+        padding-left: 100px;
+      }
+
+      ul {
+        display: flex;
+        padding-top: 30px;
+        padding-left: 300px;
+        font-family: Arial;
+      }
+
+      li {
+        margin-left: 30px;
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover {
+        font-size: larger;
+        color: rgb(242, 241, 243);
+      }
+
+      .contact-us {
+        height: 35px;
+        width: 130px;
+        margin-top: 20px;
+        margin-right: 80px;
+        border-radius: 0.2em;
+        border-color: rgb(174, 120, 245);
+        background-color: transparent;
+        font-family: Arial;
+      }
+      .contact-us:hover {
+        background-color: rgb(153, 122, 184);
+      }
+
+      .bg-img {
+        height: 400px;
+        width: 600px;
+        margin-right: 150px;
+        float: right;
+      }
+
+      .heading {
+        margin-top: 150px;
+        font-family: Arial;
+        margin-left: 100px;
+      }
+      .para {
+        width: 400px;
+        font-family: Arial;
+        font-size: small;
+        margin-top: 10px;
+        margin-left: 100px;
+      }
+
+      .get-started {
+        height: 35px;
+        width: 130px;
+        margin-top: 20px;
+        margin-left: 100px;
+        border-radius: 0.2em;
+        border-color: rgb(174, 120, 245);
+        font-family: Arial;
+        background-color: rgb(153, 122, 184);
+      }
+
+      .get-started:hover {
+        color: rgb(26, 25, 25);
+        background-color: transparent;
+      }
+
+      @media only screen and(max-width: 990px) {
+        .bg-img {
+          display: none;
+        }
+        .contact-us {
+          padding: 5px 8px;
+          margin-right: 10px;
+        }
+      }
+
+      @media only screen and(max-width:500px) {
+        .nav-items li a {
+          display: block;
+          text-align: right;
+        }
+        .bg-img {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="body">
+    <header>
+      <div class="navbar">
+        <div class="nav-logo">
+          <img
+            src="logo-removebg-preview (1).png"
+            alt="navlogo"
+          />
+        </div>
+        <ul class="nav-items">
+          <li>
+            <a href="#"><span style="color: rgb(176, 121, 228)">About</span></a>
+          </li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+        <button class="contact-us">Contact Us</button>
+      </div>
+    </header>
+
+    <main>
+      <img
+        src="WhatsApp_Image_2024-05-14_at_5.25.59_PM-removebg-preview.png"
+        class="bg-img"
+      />
+      <h1 class="heading">
+        Launch your own online <br />
+        learning platform
+        <br /><span style="color: rgb(210, 171, 245)"> for FREE</span>
+      </h1>
+      <p class="para">
+        Top teacher from around thr world teach thousands of students. Get
+        unlimited access to 1000+ courses
+      </p>
+      <button class="get-started">Get started</button>
+    </main>
+  </body>
+</html>
